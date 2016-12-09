@@ -1,0 +1,9 @@
+version: "2"
+services:
+   node_boiler_test:
+      build: .
+      command: tap test
+
+   node_boiler_coverage:
+      build: .
+      command: istanbul cover test/test.js

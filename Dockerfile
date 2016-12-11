@@ -1,14 +1,9 @@
 FROM node:argon
-
 RUN mkdir -p /app
-
-ADD package.json /tmp/package.json
-RUN cd /tmp && npm install
-RUN cp -a /tmp/node_modules /app/
-
-# in case these guys aren't included in the package.json
-RUN npm -g install istanbul tap tape
-
 WORKDIR /app
-ADD . /app
+COPY package.json /tmp/
+RUN cd /tmp && npm -g install
+RUN npm install -g eslint eslint-plugin-smells istanbul tape
+CMD /app/docker_entry.sh
+ENV NODE_PATH=/usr/local/lib/node_modules
 EXPOSE 8080

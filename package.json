@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "tap test",
+    "test": "mocha",
     "coverage": "istanbul cover test/test.js"
   },
   "author": "Alexander Vados <alex.vados@gmail.com>",
@@ -12,7 +12,8 @@
     "eslint-plugin-smells": "^1.0.1",
     "istanbul": "^0.3.13",
     "tap": "^0.7.1",
-    "tape": "^4.0.0"
+    "tape": "^4.0.0",
+    "mocha": "^3.2.0"
   },
   "description": "simple time-ago to words",
   "directories": {

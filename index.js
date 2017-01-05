@@ -1,5 +1,5 @@
-'use strict';
 
+'use strict';
 var settings = {
     allowFuture: true,
     prefixAgo: null,

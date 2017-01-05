@@ -1,3 +1,4 @@
+
 # simple-timeago  [![Build Status](https://travis-ci.org/alexander-daniel/simple-timeago.svg?branch=master)](https://travis-ci.org/alexander-daniel/simple-timeago)
 Create simple human-readable fuzzy-timestamps
 
